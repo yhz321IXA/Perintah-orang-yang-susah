@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perintah n***l* 🗿</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .box {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffea;
+      max-width: 90%;
+    }
+
+    .btn {
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #666;
+    }
+
+    #pertanyaan, #lanjutan, #pesanTidak {
+      display: none;
+      margin-top: 20px;
+    }
+    
+  </style>
+</head>
+<body style="user-select: none; -webkit-user-select: none; -ms-user-select: none;">
+  <div class="box">
+    <h2 id="prank">⚠️ Telepon Anda kena virus...</h2>
+    <p id="boong" style="display: none;">Tapi boong 😆</p>
+
+    <div id="pertanyaan">
+      <h2>Apakah Anda ingin melihat foto saya?</h2>
+      <button class="btn" onclick="jawab('iya')">Iya</button>
+      <button class="btn" onclick="jawab('tidak')">Tidak</button>
+    </div>
+
+    <div id="lanjutan">
+      <p>Tanyakan langsung ke orangnya berikut:</p>
+      <a class="btn" href="https://chat.whatsapp.com/HAXGBTPLgx8HM3Lln4lYa1?mode=ac_t" target="_blank">Tanyakan Langsung</a>
+    </div>
+
+    <div id="pesanTidak">
+      <p>Ok.Mungkin lain kali...</p>
+    </div>
+  </div><br><br>
+ <!-- Ini di luar .box -->
+<div id="keteranganHiburan" style="
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffc700;
+">
+  ⚠️INGAT KESEHATAN KITA! 
+</div>
+<footer style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #111;">
+  © 2025 yhz321ixa. All rights reserved.
+</footer>
+  
+  <script>
+     
+  
+  
+    // Prank awal
+    setTimeout(() => {
+      document.getElementById('prank').style.display = 'none';
+      document.getElementById('boong').style.display = 'block';
+    }, 1500);
+
+    setTimeout(() => {
+      document.getElementById('boong').style.display = 'none';
+      document.getElementById('pertanyaan').style.display = 'block';
+    }, 3000);
+
+    function jawab(pilihan) {
+      if (pilihan === 'iya') {
+        document.getElementById('lanjutan').style.display = 'block';
+        document.getElementById('pesanTidak').style.display = 'none';
+      } else {
+        document.getElementById('lanjutan').style.display = 'none';
+        document.getElementById('pesanTidak').style.display = 'block';
+      }
+   }
+   function jawab(pilihan) {
+  if (pilihan === 'iya') {
+    document.getElementById('lanjutan').style.display = 'block';
+    document.getElementById('pesanTidak').style.display = 'none';
+    document.getElementById('keteranganHiburan').style.display = 'block'; // Munculin teks hiburan
+  } else {
+    document.getElementById('lanjutan').style.display = 'none';
+    document.getElementById('pesanTidak').style.display = 'block';
+    document.getElementById('keteranganHiburan').style.display = 'none'; // Sembunyiin kalau pilih "tidak"
+  }
+}
+
+  // Cegah klik kanan
+  document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+  });
+
+  // Cegah seleksi teks
+  document.addEventListener("selectstart", function(e) {
+    e.preventDefault();
+  });
+
+  // Cegah drag elemen
+  document.addEventListener("dragstart", function(e) {
+    e.preventDefault();
+  });
+
+  </script>
+</body>
+</html>
